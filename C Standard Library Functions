@@ -1,0 +1,144 @@
+<assert.h> program assertion functions
+           used to verify assumptions made
+           by the program and print diagnostics
+           if this assumption is false
+           
+           function
+           
+           void assert (int expression)
+
+<ctype.h> character type functions
+          testing and mapping characters
+          int = parameter-value represented
+          as an unsigned char. All functions
+          return non-zero(true) if the argument
+          c satisfies the condition described,
+          and zero(false) if not
+          
+          functions 
+          
+          int insalnum(int c) --> char is alphanumeric
+          int isalpha (int c) --> char is alphabetic
+          int iscntrl (int c) --> char is control char
+          int isdigit (int c) --> char is decimal digit
+          int isgraph (int c) --> char has graphical rep. using locale
+          int islower (int c) --> char is lowercase letter
+          int isprint (int c) --> char is printable
+          int ispunct(int c) --> char is punctuation char
+          int isspace(int c) --> char is white-space
+          int isupper(int c) --> char is uppercase letter
+          int isxdigit (int c) --> char is hexadecimal digit
+          
+          conversion functions
+          
+          int tolower (int c) converts uppercase to lowercase letters
+          int toupper (int c) converts lowercase letters to uppercase
+          
+<locale.h> defines the location specific settings
+          
+          library macros
+          
+          LC_ALL --> sets everything
+          LC_COLLATE --> affects strcoll and strxfrm functions
+          LC_CTYPE --> affects all char functions
+          LC_MONETARY --> affects monetary information provided by localeconv function
+          LC_NUMERIC --> affects decimal-point formatting and information provided by localconv
+          LC_TIME --> affects the strftime function
+          
+          functions
+          
+          char *setlocale (int category, const char *locale) --> sets or reads location dependent information
+          struct lconv *localeconv(void) --> sets or reads location dependent information
+          
+          Library structure 
+          
+          typedef struct {
+           char *decimal_point;
+           char *thousands_sep;
+           char *grouping;	
+           char *int_curr_symbol;
+           char *currency_symbol;
+           char *mon_decimal_point;
+           char *mon_thousands_sep;
+           char *mon_grouping;
+           char *positive_sign;
+           char *negative_sign;
+           char int_frac_digits;
+           char frac_digits;
+           char p_cs_precedes;
+           char p_sep_by_space;
+           char n_cs_precedes;
+           char n_sep_by_space;
+           char p_sign_posn;
+           char n_sign_posn;
+      } lconv
+      
+<math.h> defines various mathematical functions and one macro
+         functions take double as an argumetn adn return 
+         double as the result
+         
+         library macros
+         HUGE_VAL --> used when the reuslt of a funciton may not be
+                      representable as a floating point number
+          functions
+          
+          double acos(double x) --> Returns the arc cosine of x in radians
+          double asin(double x) --> Returns the arc sine of x in radians.
+          double atan(double x) --> Returns the arc tangent of x in radians.
+          double atan2(double y, double x) --> Returns the arc tangent in radians
+                                                of y/x based on the signs of both values
+                                                to determine the correct quadrant.
+                                                
+          double cos(double x) --> Returns the cosine of a radian angle x.
+          double cosh(double x) --> Returns the hyperbolic cosine of x.
+          double sin(double x) --> Returns the sine of a radian angle x.
+          double sinh(double x) --> Returns the hyperbolic sine of x.
+          double tanh(double x) --> Returns the hyperbolic tangent of x.
+          double exp(double x) --> Returns the value of e raised to the xth power.
+          
+          double frexp(double x, int *exponent) --> The returned value is the mantissa and
+                                                     the integer pointed to by exponent is the exponent.
+                                                     The resultant value is x = mantissa * 2 ^ exponent.
+          double ldexp(double x, int exponent) --> Returns x multiplied by 2 raised to the power of exponent      
+          double log(double x) --> Returns the natural logarithm (base-e logarithm) of x
+          double log10(double x) --> Returns the common logarithm (base-10 logarithm) of x.
+          double modf(double x, double *integer) --> The returned value is the fraction component (part after the decimal), 
+                                                     and sets integer to the integer component.
+          double pow(double x, double y) -->  Returns x raised to the power of y.
+          double sqrt(double x) --> Returns the square root of x
+          double ceil(double x) --> Returns the smallest integer value greater than or equal to x
+          double fabs(double x) --> Returns the absolute value of x.
+          double floor(double x) --> Returns the largest integer value less than or equal to x
+          double fmod(double x, double y) --> Returns the remainder of x divided by y.
+          
+<setjmp.h> defines the macro setjmp(), one funciton longlmp(),
+           and one variable type jmp_buf for bypassing the
+           normal function call and return discipline
+           
+           libaray variables
+           
+           jmp_buf --> array type used for holding information for 
+                       setjmp() and function longjmp ()
+                       
+           libaray macros
+           
+           int setjmp(jmp_buf environment) --> saves the current environment
+                                               into the current environment for
+                                               later use by the function longjmp()
+           functions
+           
+           void longjmp(jmp_buf environment, int value) --> restores the environment
+                                                            saved by the most recent call
+                                                            to setjmp() macro in the same invocation
+                                                            of the program with the coresponding
+                                                            jmp_buf argument
+ <signal.h>
+ <stdarg.h>
+ <stdio.h>
+ <stdlib.h>
+ <string.h>
+ <time.h>
+          
+      
+             
+          
