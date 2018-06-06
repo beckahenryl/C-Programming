@@ -1,0 +1,56 @@
+auto                                declare automatic variables. Automatc is a local variable which is allocated
+                                    and deallocated automatically when program flow enters and leaves the variable
+                                    scope. Scop is the lexical context particularly the function block in which
+                                    the variable is defined
+  
+break & continue                    break: makes the program jump out of the innermost loop (while, do for, switch)
+                                    explicitly
+
+switch, case, default               Switch and case are used when the block of statements has to be executed among many
+                                    blocks
+                                     
+char                                 declares a character variable. It is one byte
+
+const                                an identifier can be declared constant by using constant keyword. It is user defined
+                                     an identifier is a string of alphanueric characters that begins with an alphatical 
+                                     character of an underlined character that are used to represent various program
+                                     elements, varaibles, functions, arrays structures
+                                     
+if & else                            used to make decisions
+
+enum                                 declared in C programming using keyword enum. User defined data type. 
+                                     used to declare new enumerical types
+
+extern                               declares that a variable or a function has external linkages outside of its declared
+
+for                                  it is a loop
+
+goto                                  used for unconditional jump to a labeled statement inside a function
+
+int                                   declares integer type variable
+
+short, long, signed, unsigned         type modifiers that alters the meaning of a base data type to yield a new type.
+                                      a modifier is used to alter the meaning of the base type so that it is precisely
+                                      fits the needs of various situations
+                                      
+return                                terminates the funtion and returns the value
+
+sizeof                                evaluates the size of data (a variable of a constant)
+
+register                              creates register variables which are much faster than normal variables
+                                      it hints that a given variable can be put in a register
+                                      
+static                                creates a static variable.the value of a static variable persists until the end
+                                      end of the program
+                                      
+struct                                used for declaring a structure. A structure can hold variables of different types
+                                      under a single name
+                                      
+typedef                               used to explicitly associate a type with an identifier
+
+union                                 used for grouping differet types of variables under a single name
+
+void                                  indicates that a function doesn't return any value
+
+volatile                              used for creating a volatile object. a volatile object can be modified
+                                      in an unspeciied way by the hardware
