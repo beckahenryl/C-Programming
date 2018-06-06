@@ -1,0 +1,45 @@
+else - captures all of the conditions that are not true. If conditions. It indicates every other condition which
+not satisfied by your if condition. You can check multiple conditions using if ese statements. We can use
+multiple else if statements
+
+nested if else statement: if conditions that had multiple if else conditions in it
+
+The ternary conditions operator in C is used to make decisions in C
+Ternary vs. if else conditions: faster perfomance. The actual benefit is that you can write your code in one line: see notes in codeblocks
+
+Switch statements in C: expressions is something you want to validate on some case.
+
+break: breaks the switch case and also breaks out of the statement
+
+while loop: a loop is a piece of code which will execute again and again until some condition is true. While: evaluates our condition
+
+do while loop vs. while loop: while loop whenever we use it, it checks the condition first and then executes your code. Do while loop:
+executes your loop at least once and then checks your codition. And if the condition is true then it goes back to the statement and it 
+will execute the statement and as soon as the statemnet is false, it goes out of the loop
+
+for loop: depends on the initialization condition and the increment property. There are three arguments separated by semicolons. If condition
+is true, the for loop will be executed (statement (s);)
+
+init= initialization
+condition= whether it is true or not
+increment= of the paramenter initialized in the first parameter
+
+In for loop: you dont have to initialize the condition (i.e. int /= a = 0)
+
+Function: thisis a piece of code or blck of code which we can use to perform a particular task. Every C program has at least one function
+like the man c
+
+you declare a function using the void. We are not returning anything. You can decide whether to give a parameter to the function
+to call a function, you copy the name of the function as it is
+
+Calling the function into main: it replaces the code that you already wrote: see the functions project in code blocks
+
+the name of the function should reflect the code we are writing.
+
+Can use the function insdie of the code multiple times.
+
+Function makes your code readable and faster to execute
+
+You can declare the function below or above the main function: you will need to prototype your function (forward declaration of your function)
+
+
